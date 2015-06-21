@@ -89,6 +89,9 @@ default.elasticsearch[:thread_stack_size] = "256k"
 
 default.elasticsearch[:env_options] = ""
 
+default.elasticsearch[:http][:cors][:allow_origin] = "/.*/"
+default.elasticsearch[:http][:cors][:enabled] = true
+
 # === OTHER SETTINGS
 #
 default.elasticsearch[:skip_restart] = false
